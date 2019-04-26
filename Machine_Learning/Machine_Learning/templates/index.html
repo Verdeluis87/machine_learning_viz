@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="">
+
+<head>
+  <title>ML-Based Movie Success Predictor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="static/layout/styles/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body id="top">
+
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear">
+      <ul>
+        <li><i class="fa fa-clock-o"></i>Created and Developed by Luis Verde, Jennifer Mayfield, and Brent Findley</li>
+
+      </ul>
+    </div>
+  </div>
+
+  <!-- Top Background Image Wrapper -->
+  <div class="bgded overlay" style="background-image:url('static/img/hollywood.jpg');">
+    <!-- ################################################################################################ -->
+    <div class="wrapper row1">
+      <header id="header" class="hoc clear">
+        <!-- ################################################################################################ -->
+
+        <nav id="mainav" class="fl_right">
+          <ul class="clear">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#method">Methodology</a></li>
+            <li><a href="results.html">Our Results</a></li>
+            <li><a href="visualizations.html">Data Insight</a></li>
+          </ul>
+        </nav>
+        <!-- ################################################################################################ -->
+      </header>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div id="pageintro" class="hoc clear">
+      <article>
+        <!-- ################################################################################################ -->
+        <h3 class="heading">Can You Predict A Movie's Profitability Status?</h3>
+        <p>We used Machine Learning-based technologies to find out.</p>
+
+
+      </article>
+    </div>
+  </div>
+  <a name="background">
+
+  </a>
+  <div class="wrapper row3">
+    <main class="hoc container clear">
+      <!-- main body -->
+      <!-- ################################################################################################ -->
+      <div class="sectiontitle">
+        <h6 class="heading">Background of Our Problem</h6>
+        <hr />
+        <hr />
+        <p><strong>We wanted to use machine-learning and other technologies to be able to predict a movie's success
+            given many different variables, both numerical and categorical.</strong></p>
+      </div>
+      <div class="group">
+        <div class="two_third first">
+          <p><strong>There are many different variables that can attribute to a movie's success. From actors, to
+              production studios, to budgets, to directors, all of these have a hand at play.</strong></p>
+          <p>The key challenge was honing in on these variables and not only making them fit our dataset so our model
+            could use them, but also determining which ones were statistically significant.
+            There were many to choose from, from directors and actors all the way to combined Facebook likes for the
+            cast members. </p>
+          <p>Our datasets of course did not come with the necessary formatting we needed to immediately begin testing
+            our data. We had to perform considerable cleaning in order to get the data up to par.
+
+          </p>
+          <p>
+            In order to use machine learning to test our data, we used several different sub-libraries from the Sci-kit
+            Learn library in Pandas. Specifically, we used multi-line linear
+            regressions, decision-tree analysis, and random forest analysis.
+          </p>
+          <p class="btmspace-30"></p>
+        </div>
+        <div class="one_third">
+          <img src="static/images/demo/backgrounds/movieset.jpg">
+          <img src="static/images/demo/backgrounds/movieset2.jpg">
+
+
+        </div>
+        <!-- ################################################################################################ -->
+        <!-- / main body -->
+        <div class="clear"></div>
+    </main>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <a name="method"></a>
+  <div class="wrapper bgded overlay light"
+    style="background-image:url('static/images/demo/backgrounds/grey-background.jpg');">
+    <section class="hoc container clear">
+      <!-- ################################################################################################ -->
+      <div class="sectiontitle">
+        <h6 class="heading">Our Methodology</h6>
+        <p>How We Managed to Predict Whether a Movie is Profitable or Not</p>
+      </div>
+      <ul class="nospace group">
+        <li class="one_third first btmspace-30">
+          <article><i class="btmspace-30 fa fa-3x fa-imdb"></i>
+            <h6 class="heading"><a href="#">Pulling Data from Kaggle/APIs</a></h6>
+            <p>We used data from both Kaggle and IMDB APIs for variables such as budgets, directors, etc.</p>
+          </article>
+        </li>
+        <li class="one_third btmspace-30">
+          <article><i class="btmspace-30 fa fa-3x fa-shower"></i>
+            <h6 class="heading"><a href="#">Cleaning the Data with Pandas</a></h6>
+            <p>Fixing formatting, eliminating null values, etc. Then preparing it for training in our models.</p>
+          </article>
+        </li>
+        <li class="one_third btmspace-30">
+          <article><i class="btmspace-30 fa fa-3x fa-leanpub"></i>
+            <h6 class="heading"><a href="#">Using Sci-Kit Learn to Model Our Data</a></h6>
+            <p>Multi-line linear regressions, decision-tree analysis, and random-forest analysis.</p>
+          </article>
+        </li>
+        <li class="one_third first">
+          <article><i class="btmspace-30 fa fa-3x fa-dashboard"></i>
+            <h6 class="heading"><a href="#">Displaying Results with Tableau</a></h6>
+            <p>Using Tableau dashboarding to compile statistical queries in an easy-to-read format.</p>
+          </article>
+        </li>
+        <li class="one_third">
+          <article><i class="btmspace-30 fa fa-3x fa-internet-explorer"></i>
+            <h6 class="heading"><a href="#">Publishing Results to the Web</a></h6>
+            <p>Thanks for viewing! You can try our simulator <a href="results.html">here</a> to predict whether your
+              movie inputs would generate a profitable movie.</p>
+          </article>
+        </li>
+
+      </ul>
+      <!-- ################################################################################################ -->
+    </section>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row5">
+    <div id="copyright" class="hoc clear">
+      <!-- ################################################################################################ -->
+      <p class="fl_left">Designed by Brent Findley, Jennifer Mayfield, and Luis Verde</a></p>
+      <p class="fl_right">University of Texas - Austin Data Visualization Bootcamp Final Project</a></p>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+  <!-- JAVASCRIPTS -->
+  <script src="static/layout/styles/jquery.min.js"></script>
+  <script src="static/layout/styles/jquery.backtotop.js"></script>
+  <script src="static/layout/styles/jquery.mobilemenu.js"></script>
+  <script src="static/layout/styles/jquery.fitvids.js"></script>
+</body>
+
+</html>

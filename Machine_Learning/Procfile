@@ -1,0 +1,1 @@
+web: gunicorn Machine_Learning.app:app

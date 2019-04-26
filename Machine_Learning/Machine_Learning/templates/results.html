@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="">
+
+<head>
+    <title>ML-Based Movie Success Predictor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <link href="static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link href="static/layout/styles/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body id="top">
+
+    <div class="wrapper row0">
+        <div id="topbar" class="hoc clear">
+            <ul>
+                <li><i class="fa fa-clock-o"></i>Created and Developed by Luis Verde, Jennifer Mayfield, and Brent
+                    Findley</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- Top Background Image Wrapper -->
+    <div class="bgded overlay" style="background-image:url('static/img/hollywood.jpg');">
+        <!-- ################################################################################################ -->
+        <div class="wrapper row1">
+            <header id="header" class="hoc clear">
+                <!-- ################################################################################################ -->
+
+                <nav id="mainav" class="fl_right">
+                    <ul class="clear">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#background">Background</a></li>
+                        <li><a href="/#method">Methodology</a></li>
+                        <li class="active"><a href="results.html">Our Results</a></li>
+                        <li><a href="visualizations.html">Data Insight</a></li>
+                    </ul>
+                </nav>
+                <!-- ################################################################################################ -->
+            </header>
+        </div>
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <div id="pageintro" class="hoc clear">
+            <article>
+                <!-- ################################################################################################ -->
+                <h3 class="heading">Can You Predict A Movie's Profitability Status?</h3>
+                <p>We used Machine Learning-based technologies to find out.</p>
+
+
+            </article>
+        </div>
+    </div>
+    <a name="background">
+
+    </a>
+    <div class="wrapper row3">
+        <main class="hoc container clear">
+            <!-- main body -->
+            <!-- ################################################################################################ -->
+            <div class="sectiontitle">
+                <h6 class="heading">Make your selections</h6>
+                <hr />
+                <hr />
+                <div class="form-group" style="text-align: left">
+                    <form method="POST" action="/send" role="form" , name="predict">
+                        <ul class="list-group" id="filters">
+                            <li class="filter list-group-item">
+                                <label for="budget">Enter a budget</label>
+                                <input class="form-control" id="budget" type="text" placeholder="2000000.00"
+                                    name="budget">
+                            </li>
+                            <li class="filter list-group-item">
+                                <label for="actor">Select an actor</label>
+                                <input class="form-control" id="actor" name="actor">
+                                </input>
+                            </li>
+                            <li class="filter list-group-item">
+                                <label for="director">Select a director</label>
+                                <input class="form-control" id="director" name="director">
+                                </input>
+                            </li>
+                            <li class="filter list-group-item">
+                                <label for="country">Enter a country</label>
+                                <input class="form-control" id="director" name="country">
+                                </input>
+                            </li>
+                            <li class="filter list-group-item">
+                                <label for="lenguage">Select a lenguage</label>
+                                <input class="form-control" id="lenguage" name="lenguage">
+                                </input>
+                            </li>
+                            <li class="filter list-group-item">
+                                <label for="production">Select a production company</label>
+                                <input class="form-control" id="production" name="production">
+                                </input>
+                            </li>
+                            <li class="filter list-group-item">
+                                <label for="writer">Select a writer</label>
+                                <input class="form-control" id="writer" name="writer">
+                                </input>
+                            </li>
+                            <li class="filter list-group-item">
+                                <label for="runtime">Enter a runtime</label>
+                                <input class="form-control" id="runtime" type="text" placeholder="180" name="runtime">
+                            </li>
+                            <li class="filter list-group-item">
+                                <label for="rating">Select a rating</label>
+                                <input class="form-control" id="rating" name="rating">
+                                </input>
+                            </li>
+                            <li class="filter list-group-item">
+                                <label for="genre">Select genre</label>
+                                <input class="form-control" id="genre" name="genre">
+                                </input>
+                            </li>
+                        </ul>
+                        <div class="predict-button" style="text-align: center">
+                            <button id="filter-btn" type="submit" class="btn btn-default">Predict</button>
+                        </div>
+                    </form>
+                    <h3>Is it profitable?</h3>
+                    <h2 id="response">{{data}}</h2>
+                </div>
+
+
+            </div>
+            <!-- ################################################################################################ -->
+            <!-- / main body -->
+            <div class="clear"></div>
+        </main>
+    </div>
+
+
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row5">
+        <div id="copyright" class="hoc clear">
+            <!-- ################################################################################################ -->
+            <p class="fl_left">Designed by Brent Findley, Jennifer Mayfield, and Luis Verde</a></p>
+            <p class="fl_right">University of Texas - Austin Data Visualization Bootcamp Final Project</a></p>
+            <!-- ################################################################################################ -->
+        </div>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+    <script src="static/layout/styles/jquery.min.js"></script>
+    <script src="static/layout/styles/jquery.backtotop.js"></script>
+    <script src="static/layout/styles/jquery.mobilemenu.js"></script>
+    <script src="static/layout/styles/jquery.fitvids.js"></script>
+</body>
+
+</html>
