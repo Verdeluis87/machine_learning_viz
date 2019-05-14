@@ -10,3 +10,5 @@ The key challenge was honing in on these variables and not only making them fit 
 Our datasets of course did not come with the necessary formatting we needed to immediately begin testing our data. We had to perform considerable cleaning in order to get the data up to par.
 
 In order to use machine learning to test our data, we used several different sub-libraries from the Sci-kit Learn library in Pandas. Specifically, we used multi-line linear regressions, decision-tree analysis, and random forest analysis.
+
+https://machine-with-viz.herokuapp.com/
